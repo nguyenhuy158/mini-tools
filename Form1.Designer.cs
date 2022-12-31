@@ -37,12 +37,12 @@
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.textBoxNewCharacter = new System.Windows.Forms.TextBox();
+            this.textBoxOldCharacter = new System.Windows.Forms.TextBox();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.button3 = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.textBoxOldCharacter = new System.Windows.Forms.TextBox();
-            this.textBoxNewCharacter = new System.Windows.Forms.TextBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -105,7 +105,7 @@
             this.groupBox1.Size = new System.Drawing.Size(200, 75);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Text = "Input";
             // 
             // groupBox2
             // 
@@ -122,7 +122,25 @@
             this.groupBox2.Size = new System.Drawing.Size(226, 101);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
+            this.groupBox2.Text = "Action";
+            // 
+            // textBoxNewCharacter
+            // 
+            this.textBoxNewCharacter.Enabled = false;
+            this.textBoxNewCharacter.Location = new System.Drawing.Point(178, 45);
+            this.textBoxNewCharacter.Name = "textBoxNewCharacter";
+            this.textBoxNewCharacter.Size = new System.Drawing.Size(40, 20);
+            this.textBoxNewCharacter.TabIndex = 5;
+            this.toolTip1.SetToolTip(this.textBoxNewCharacter, "new character");
+            // 
+            // textBoxOldCharacter
+            // 
+            this.textBoxOldCharacter.Enabled = false;
+            this.textBoxOldCharacter.Location = new System.Drawing.Point(132, 45);
+            this.textBoxOldCharacter.Name = "textBoxOldCharacter";
+            this.textBoxOldCharacter.Size = new System.Drawing.Size(40, 20);
+            this.textBoxOldCharacter.TabIndex = 5;
+            this.toolTip1.SetToolTip(this.textBoxOldCharacter, "old character");
             // 
             // numericUpDown1
             // 
@@ -131,6 +149,17 @@
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(41, 20);
             this.numericUpDown1.TabIndex = 4;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(6, 47);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(109, 17);
+            this.checkBox2.TabIndex = 3;
+            this.checkBox2.Text = "replace character";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckStateChanged += new System.EventHandler(this.checkBox2_CheckStateChanged);
             // 
             // button3
             // 
@@ -149,35 +178,6 @@
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(521, 23);
             this.progressBar1.TabIndex = 6;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(6, 47);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(109, 17);
-            this.checkBox2.TabIndex = 3;
-            this.checkBox2.Text = "replace character";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.CheckStateChanged += new System.EventHandler(this.checkBox2_CheckStateChanged);
-            // 
-            // textBoxOldCharacter
-            // 
-            this.textBoxOldCharacter.Enabled = false;
-            this.textBoxOldCharacter.Location = new System.Drawing.Point(132, 45);
-            this.textBoxOldCharacter.Name = "textBoxOldCharacter";
-            this.textBoxOldCharacter.Size = new System.Drawing.Size(40, 20);
-            this.textBoxOldCharacter.TabIndex = 5;
-            this.toolTip1.SetToolTip(this.textBoxOldCharacter, "old character");
-            // 
-            // textBoxNewCharacter
-            // 
-            this.textBoxNewCharacter.Enabled = false;
-            this.textBoxNewCharacter.Location = new System.Drawing.Point(178, 45);
-            this.textBoxNewCharacter.Name = "textBoxNewCharacter";
-            this.textBoxNewCharacter.Size = new System.Drawing.Size(40, 20);
-            this.textBoxNewCharacter.TabIndex = 5;
-            this.toolTip1.SetToolTip(this.textBoxNewCharacter, "new character");
             // 
             // toolTip1
             // 
