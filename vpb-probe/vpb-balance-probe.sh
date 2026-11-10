@@ -39,6 +39,7 @@ token_rc=0
 wget -S -q $error_body_flag -O "$work/token.json" \
   --header "Authorization: Basic $basic" \
   --header "Content-Type: application/x-www-form-urlencoded" \
+  --header "IDN-App: $IDN_APP" \
   --post-data "grant_type=client_credentials" \
   "$TOKEN_URL" 2>"$work/token.err" || token_rc=$?
 token_status="$(status_of "$work/token.err")"
